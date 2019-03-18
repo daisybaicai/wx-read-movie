@@ -2,6 +2,6 @@
   <image class='avator' src="/images/head.png"></image>
   <text class='text'>hello，Daisy</text>
   <view class='bottom-box' bindtap="onTap">
-    <text class='start'>开始你的第一个小程序</text>
+    <text class='start'>开始你的旅程</text>
   </view>
 </view>

@@ -1,0 +1,171 @@
+/* pages/movie/movie-detail/movie-detail.wxss */
+
+@import "../stars/stars-template.wxss"
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.head-img {
+  width: 100%;
+  height: 320rpx;
+  -webkit-filter: blur(20px);
+}
+
+.head-img-hover {
+  width: 100%;
+  height: 320rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-title {
+  font-size: 19px;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 50rpx;
+  margin-left: 40rpx;
+  letter-spacing: 2px;
+}
+
+.sub-title {
+  font-size: 28rpx;
+  color: #fff;
+  margin-left: 40rpx;
+  margin-top: 30rpx;
+}
+
+.like {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30rpx;
+  margin-left: 40rpx;
+}
+
+.highlight-font {
+  color: #f21146;
+  font-size: 22rpx;
+  margin-right: 10rpx;
+}
+
+.plain-font {
+  color: #666;
+  font-size: 22rpx;
+  margin-right: 30rpx;
+}
+
+.movie-img {
+  position: absolute;
+  width: 175rpx;
+  height: 238rpx;
+  top: 160rpx;
+  right: 30rpx;
+}
+
+.summary {
+  margin-left: 40rpx;
+  margin-top: 40rpx;
+  color: #777;
+}
+
+.original-title {
+  color: #1f3463;
+  font-size: 24rpx;
+  font-weight: bold;
+  margin-bottom: 40rpx;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10rpx;
+}
+
+.mark {
+  margin-right: 30rpx;
+  white-space: nowrap;
+  color: #999;
+}
+
+.hr {
+  margin-top: 45rpx;
+  height: 1px;
+  width: 100%;
+  background-color: #d9d9d9;
+}
+
+.synopis {
+  margin-left: 40rpx;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50rpx;
+}
+
+.synopis-font {
+  color: #999;
+}
+
+.summary-content {
+  margin-top: 20rpx;
+  margin-right: 40rpx;
+  line-height: 40rpx;
+  letter-spacing: 1px;
+}
+
+.cast {
+  margin-left: 40rpx;
+  margin-top: 50rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.cast-font {
+  color: #999;
+  margin-bottom: 40rpx;
+}
+
+.cast-container {
+  display: inline-block;
+  margin-bottom: 50rpx;
+  margin-right: 40rpx;
+  width: 170rpx;
+  height: 210rpx;
+  text-align: center;
+  white-space: normal;
+}
+
+.cast-imgs {
+  overflow: hidden;
+  width: 100%;
+  height: 300rpx;
+  white-space: nowrap;
+}
+
+.cast-img {
+  width: 170rpx;
+  height: 210rpx;
+}
+
+.cast-name {
+  margin: 10rpx auto 0;
+}
+
+
+.scroll_box{
+width: 100%;
+height: 307rpx;
+overflow: hidden;
+padding: 20rpx;
+background: #fff;
+white-space: nowrap;
+}
+.item_list{
+width: 160rpx;
+height: auto;
+margin-right: 23rpx;
+display: inline-block;
+}

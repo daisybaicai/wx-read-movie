@@ -5,7 +5,10 @@
     "pages/post/post-detail/post-detail",
     "pages/movie/movie",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/movie/more-movie/more-movie",
+    "pages/movie/movie-detail/movie-detail",
+    "pages/movie/stars/stars-template"
   ],
   "window":{
     "navigationBarBackgroundColor": "#405f80"

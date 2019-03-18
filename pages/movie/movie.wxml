@@ -1,2 +1,19 @@
 <!--pages/movie/movie.wxml-->
-<text>myddl</text>
+<import src="movie-list/movie-list-template.wxml" />
+<view>
+  <view class="search">
+    <icon type="search" class="search-img"size="13"></icon>
+    <input type="text" placeholder="输入你想搜索的"></input>
+  </view>
+  <view class="container">
+    <view>
+      <template is="movieListTemplate" data="{{...inTheaters}}"/>
+    </view>
+    <view>
+      <template is="movieListTemplate" data="{{...comingSoon}}"/>
+    </view>
+    <view>
+      <template is="movieListTemplate" data="{{...top250}}"/>
+    </view>
+  </view>
+</view>
