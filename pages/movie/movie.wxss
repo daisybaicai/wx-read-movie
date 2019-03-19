@@ -25,3 +25,14 @@
   flex-direction: column;
   background: #f2f2f2;
 }
+
+.search-panel{
+  position: absolute;
+  top: 80rpx;
+}
+
+.xx-img{
+    height: 30rpx;
+    width: 30rpx;
+    margin:auto 0 auto 10rpx;
+}

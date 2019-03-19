@@ -3,7 +3,8 @@
   <view class="stars-container">
     <view class="stars">
       <block wx:for="{{stars}}" wx:for-item="i" wx:key="star">
-        <image wx:if="{{i}}" src="/images/icon/star.png"></image>
+        <image wx:if="{{i === 1}}" src="/images/icon/star.png"></image>
+        <image wx:elif="{{i === 0.5}}" src="/images/icon/half-star.png"></image>
         <image wx:else src="/images/icon/none-star.png"></image>
       </block>
     </view>

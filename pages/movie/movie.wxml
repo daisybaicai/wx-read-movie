@@ -1,11 +1,13 @@
 <!--pages/movie/movie.wxml-->
 <import src="movie-list/movie-list-template.wxml" />
+<import src="movie-grid/movie-grid-template.wxml" />
 <view>
   <view class="search">
     <icon type="search" class="search-img"size="13"></icon>
-    <input type="text" placeholder="输入你想搜索的"></input>
+    <input type="text" placeholder="输入你想搜索的" bindfocus="onBindFocus" bindblur="onBindBlur" value="{{searchText}}"></input>
+    <image wx:if="{{searchPanelShow}}" src="/images/icon/xx.png" class="xx-img" bindtap="onCancelImgTap">></image>
   </view>
-  <view class="container">
+  <view class="container" wx:if="{{containerShow}}">
     <view>
       <template is="movieListTemplate" data="{{...inTheaters}}"/>
     </view>
@@ -16,4 +18,8 @@
       <template is="movieListTemplate" data="{{...top250}}"/>
     </view>
   </view>
+</view>
+
+<view class="search-panel" wx:if="{{searchPanelShow}}">
+  <template is="movieGridTemplate" data="{{...searchResult}}"/>
 </view>
